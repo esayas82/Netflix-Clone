@@ -33,35 +33,35 @@
     /* background-color: yellow; */
 }
 
-.header_left ul{
-    width: 140%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-    cursor: pointer;
-    /* background-color: lightblue; */
+.header_left ul,
+.header_right ul {
+  display: flex;
+  list-style: none;
+  gap: 20px; /* Adds clean space between list items */
+  align-items: center;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
 }
 
-.header_right ul{
-    width: 150%;
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    cursor: pointer;
-    /* background-color: lightgreen; */
-}
-@media screen and (max-width: 480px){
+@media screen and (max-width: 480px) {
     .header_outer_container {
-        height: 8vh;
-        flex-direction: column;
-      }
-    
-      .header_left ul,
-      .header_right ul {
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-      }
-    
-}
+      height: auto;
+      flex-direction: column;
+      padding: 10px 0;
+    }
+  
+    .header_left ul,
+    .header_right ul {
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      gap: 15px; /* Adds space between stacked items */
+    }
+  
+    .header_container {
+      flex-direction: column;
+      gap: 20px; /* Adds spacing between left and right nav sections */
+    }
+  }
+  
