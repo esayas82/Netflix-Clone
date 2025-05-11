@@ -8,13 +8,14 @@
 }
 .banner_contents{
     padding-left: 20px;
-}
-.banner_buttons{
-    /* margin-left: 10px; */
-    /* height: 190px; */
     padding-top: 300px;
-  
 }
+/* .banner_buttons{
+    margin-left: 10px;
+    height: 190px;
+    
+  
+} */
 .banner_title{
     font-size: 3rem;
     font-weight: 800;
